@@ -9,7 +9,7 @@
 
    - Queue의 선언 - Queue<Integer> p = new LinkedList<>();
 
-                    링크드 리스트를 이용한다.
+      linkedlist를 이용한다.
 
    - Queue의 명령어
 
