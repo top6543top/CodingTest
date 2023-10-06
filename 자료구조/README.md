@@ -4,15 +4,22 @@
 1. 스택
 
    - Stack의 선언 - Stack<Integer> stack = new Stack<>();
-   - Stack의 명령어
+
+    - Stack의 명령어
+      
      push(입력) - 입력
+
      pop() - 맨 위 제거
+   
      peek() - 맨 위 값 출력
+   
      size() - 크기 출력
+   
      empty() - 비어있으면 true 출력
+   
      contains(입력) - 입력된 것이 있는지 확인 있다면 true 반환 
 
-2. 큐
+3. 큐
 
    - Queue의 선언 - Queue<Integer> p = new LinkedList<>();
 
