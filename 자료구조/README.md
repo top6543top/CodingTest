@@ -7,17 +7,17 @@
 
     - Stack의 명령어
       
-     push(입력) - 입력
-
-     pop() - 맨 위 제거
+        push(입력) - 입력
    
-     peek() - 맨 위 값 출력
-   
-     size() - 크기 출력
-   
-     empty() - 비어있으면 true 출력
-   
-     contains(입력) - 입력된 것이 있는지 확인 있다면 true 반환 
+        pop() - 맨 위 제거
+      
+        peek() - 맨 위 값 출력
+      
+        size() - 크기 출력
+      
+        empty() - 비어있으면 true 출력
+      
+        contains(입력) - 입력된 것이 있는지 확인 있다면 true 반환 
 
 3. 큐
 
