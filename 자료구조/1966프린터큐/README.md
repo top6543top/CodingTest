@@ -7,3 +7,25 @@
 - 공부한 점
 
   문제 풀이 방식은 배열에 중요도 저장하여 큐와 비교해가면서 문제를 해결하였다.
+
+  비교하는 다른 방법
+
+  ```java
+    for (int i = 9; i > 0; i--) {
+           while (counter[i] > 0) {
+                 // 중요도는 1부터 9까지이다.
+                 // counter은 그 중요도에 몇개가 있는지 새는 배열이다.
+                 // 이렇게하면 나처럼 정렬할 필요 x <시간 단축>
+                item = q.poll();
+                if (item[1] == i) {
+                    counter[i]--;
+                    count++;
+                    if (item[0] == m) {
+                        return count;
+                    }
+                } else {
+                    q.offer(item);
+                }
+            }
+        }
+  ```
