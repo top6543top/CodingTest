@@ -59,3 +59,5 @@
      그 외 - size() , contain(),getFirst(),getLast(),peekFirst() ...  과 같은 메소드 존재
 
      get은 오류 발생, peek은 true,false값 리턴
+
+     add필요 없을 시 List 구현이 더 효율적
