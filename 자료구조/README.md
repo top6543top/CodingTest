@@ -19,7 +19,10 @@
       
         contains(입력) - 입력된 것이 있는지 확인 있다면 true 반환 
 
-3. 큐
+
+---
+
+2. 큐
 
    - Queue의 선언 - Queue<Integer> p = new LinkedList<>();
 
@@ -36,3 +39,23 @@
        peek() - 첫번째값 참조
 
     - 주의 할 점 add() 작업은 시간이 오래걸린다. 따라서 값만 뽑아 내는 문제일 때는 arrayList 이용하여 문제를 해결하면 좋다.
+
+---
+
+3. 덱(Deque)
+
+   - Deque의 선언 - ArrayDeque, LinkedBlockingDeque, ConcurrentLinkedDeque, LinkedList 다음과 같은 것으로
+
+     Deque<> dq = new 000<>();
+
+      이용가능
+
+   - Deque의 명령어
+  
+     addFirst(), offerFirst() - 앞쪽에 값 추가, add는 용량초과 시 오류 발생, offer은 삽입가능시 true, 용량초과시 false
+
+     addLast(){== add()}, offerLast() - 뒤쪽에 값 추가, 위와 동일
+
+     그 외 - size() , contain(),getFirst(),getLast(),peekFirst() ...  과 같은 메소드 존재
+
+     get은 오류 발생, peek은 true,false값 리턴
