@@ -44,3 +44,4 @@ public class Main
         
 	}
 }
+// 속도 632ms
