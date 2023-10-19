@@ -16,6 +16,45 @@
 
      - 이중 배열을 이용한 구현
   
-        node[0]이 root노드일 때 node[0][1]가 left, node[0][2]가 right이다.    
+        node[0]이 root노드일 때 node[0][1]가 left, node[0][2]가 right이다.
+
+        순회방식은 1991 트리순회 문제에 설명 되어 있음.
 
      - 구조체를 이용한 구현
+
+        ```java
+          class Node { //트리의 노드 정보를 저장할 클래스 구조체 
+            	int data; //노드 값 
+            	Node left; //왼쪽 자식 노드 참조 값 
+            	Node right; //오른쪽 자식 노드 참조 값 
+            	
+            	Node(int data){ 
+            		this.data = data;
+            	}
+            }
+        ```
+
+       이와 같은 Node 구조체 생성하고
+
+       ```java
+          public class TreeOrderClass {
+              	public Node root; //초기 root는 null
+              
+              	public void createNode(int data, int leftData, int rightData) {
+              	}
+              
+              	public void searchNode(Node node, int data, int leftData, int rightData) { 
+              	}
+              
+              	public void preOrder(Node node) {
+              	}
+              
+              	public void preOrder(Node node) {
+              	}
+              
+              	public void preOrder(Node node) {
+              	}
+        }
+       ```
+
+       트리 클래스를 만들어 노드를 이용하는 형식으로 사용한다.
