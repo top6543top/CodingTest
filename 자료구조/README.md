@@ -74,3 +74,23 @@
    힙의 키워드는 '빠르게' 이다. 따라서 완전이진트리(마지막 레벨에서 왼쪽부터 채우는 이진 트리)를 이용하여 구현한다.
 
    이진트리에서 우선순위를 정하는 방법은 각자 정해주는 것이 아니라 부모노드는 항상 우선순위를 가진다이다. 같은 레벨끼리의 우선순위는 고려하지 않는다.
+
+   최대 힙과 최소 힙은 PriorityQueue<Integer> a =new PriorityQueue<>(); -> 최소힙
+
+    PriorityQueue<Integer> a = new PriorityQueue<>(Collections.reverseOrder()); -> 최대힙
+
+   과 같이 풀 수 있지만 직접 배열이나 linkedlist를 이용하여 구현 가능하다.
+
+   구현 코드는 11279 최대힙2.java 코드를 참고하면 된다.
+
+   우선순위큐 객체를 이용할 때 구현을 할 수도 있는데
+
+   객체 implements Comparable<Restaurant>{
+      @Override
+       public int compareTo(int a) {
+       	
+    }
+   }
+
+
+   와 같이 compareTo()를 구현해주면된다.
