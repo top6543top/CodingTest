@@ -72,6 +72,9 @@
    
    2) treeset -> HashSet특성 + 오름차순으로 정렬
       
+      treeset<> set=new treeset<>() 일때 , set.first() -> 최대값 set.last() -> 최소값이다.
+
+
    3) linkedhashset -> 데이터를 중복해서 넣을 수 없고 순서대로 데이터를 저장할 수 있다.
   
    add(), remove() 등의 함수를 이용하고 index관리를 하지 않기 때문에 iterator로 접근하는 것이 좋다.
