@@ -85,12 +85,14 @@
 
    우선순위큐 객체를 이용할 때 구현을 할 수도 있는데
 
-   객체 implements Comparable<Restaurant>{
+  ```java
+       객체 implements Comparable<Restaurant>{
       @Override
        public int compareTo(int a) {
        	
     }
    }
+  ```
 
 
    와 같이 compareTo()를 구현해주면된다.
