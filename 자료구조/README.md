@@ -61,3 +61,7 @@
      get은 오류 발생, peek은 true,false값 리턴
 
      add필요 없을 시 List 구현이 더 효율적
+---
+4. set
+
+   어떠한 원소가 집합에 포함되어있는지를 검사할때, 즉 contains() 작업을 할때 arraylist보다 set이 훨씬 빠르다.
