@@ -6,11 +6,17 @@ public class Main
     public static boolean visited[];
     public static int remove,result=0;
 	public static void dfs(int start){
-	    if(start==remove) return;
-	    
 	    visited[start]=true;
-	    if(t.get(start).size()==1) result++;
-	    
+
+        int flag=0;
+        // 더 방문할 노드가 없으면 result를 증가시켜준다.
+	    for(int i=0;i<t.get(start).size();i++){
+	        if(visited[t.get(start).get(i)]==false) flag=1;
+	    }
+        if(flag==0){
+            result++;
+        }
+        
 	    for(int i=0;i<t.get(start).size();i++){
 	        int tmp=t.get(start).get(i);
 	        if(visited[tmp]==false) dfs(tmp);
@@ -40,6 +46,14 @@ public class Main
         }
         
         remove=Integer.parseInt(br.readLine());
+        if(remove==start) {System.out.println("0"); return;}
+        //제거해야할 숫자를 가지고 있으면 배열에서 제거한다.
+        for(int i=0;i<n;i++){
+            if(t.get(i).contains(remove)){
+                t.get(i).remove(t.get(i).indexOf(remove));
+            }
+        }
+        
         dfs(start);
         
         System.out.println(result);
