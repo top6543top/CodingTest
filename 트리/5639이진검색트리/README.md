@@ -16,7 +16,9 @@
 
 
   1. 풀이방식
-  
+
+  속도 800->400 으로 감소
+
   ```java
     //girawhale님의 코드
     import java.util.Scanner;
