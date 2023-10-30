@@ -19,4 +19,20 @@
     -> 25가 최대공약수가 된다.
 
     숫자가 여러개면 이 25와 뒤에 나온 숫자를 똑같이 유클리드 호제법을 실행하면 된다.
+
+    ```java
+      public static int gcd(int x,int y){
+	    //큰수가 x,작은수가 y
+	    int max=Math.max(x,y);
+	    int min=Math.min(x,y);
+	    int t=1;
+	    while(true){
+	        t=max%min;
+	        if(t==0) break;
+	        max=min;
+	        min=t; 
+	    }
+	    return min;
+	}
+    ```
     
