@@ -15,8 +15,11 @@
   BigInteger을 사용한다. BigInteger은 객체로써 선언하여 사용하는데 이것의 원리는 스트링으로 숫자를 저장하여 연산하는 것이다.
 
   BigInteger num=new BigInteger("10000"); 와 같이 사용하거나
+
   BigInteger bigNum1 = BigInteger.ZERO;  // 0
+
   BigInteger bigNum2 = BigInteger.ONE;   // 1
+
   BigInteger bigNum3 = BigInteger.TEN;   // 10
 
   다음과 같이 사용할 수 있다.
