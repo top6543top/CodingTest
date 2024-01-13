@@ -1,3 +1,4 @@
+//https://www.acmicpc.net/problem/1504
 import java.io.*;
 import java.util.*;
 public class Main
