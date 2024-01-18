@@ -6,4 +6,6 @@
 
 간선이 많으면 프림이 더 좋다. 
 
+문제에서 시간 차이 크루스칼 2200m/s , 프림 1300m/s
+
 https://www.acmicpc.net/problem/16398
