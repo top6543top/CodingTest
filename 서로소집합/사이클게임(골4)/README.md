@@ -29,3 +29,5 @@ https://www.acmicpc.net/problem/20040
         return parents[x] = find(parents[x]);
     }
   ```
+
+  경로를 찾을게 아니라면 해당 방법으로 풀이하는 게 더 빠르다
