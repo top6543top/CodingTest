@@ -1,5 +1,7 @@
 ## 골 4 사이클 게임
 
+https://www.acmicpc.net/problem/20040
+
 ### 1. 문제 유형
 
   자료구조 , 분리집합
