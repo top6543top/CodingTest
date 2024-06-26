@@ -11,6 +11,7 @@ class Main {
         int arr[]=new int[1000001];
         Arrays.fill(arr,1000001);
         arr[1]=0;
+        //1부터 갈수있는 숫자가 몇번째로 방문하는지 저장
         for (int i=1;i<=n;i++) {
             if(i+1<=1000000) arr[i+1]=Math.min(arr[i]+1,arr[i+1]);
             if(i*2<=1000000) arr[i*2]=Math.min(arr[i]+1,arr[i*2]);
@@ -25,6 +26,7 @@ class Main {
         int flag=n;
         StringBuilder sb=new StringBuilder();
         sb.append(flag+" ");
+        //뒤로 가면서 자신의 전단계를 확인하고 전단계 이면 stringbuilder에 삽입
         while (flag!=1) {
             if(arr[flag]-1 == arr[flag-1]){
                 sb.append(flag-1+" ");
