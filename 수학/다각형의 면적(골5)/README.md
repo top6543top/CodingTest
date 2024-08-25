@@ -28,8 +28,13 @@ https://www.acmicpc.net/problem/2166
   반올림의 방식에 대해 알게 되었다. 반올림하는 방식은 세가지가 존재한다.
 
   1. Math.round() 메서드를 이용하는 방법과
-  2. String.format()을 이용하여 System.out.println(String.format("%.3f", dNum)); 과 같이 표현하는 방법
-  3. print 함수에서 바로 표현하는 방법이 존재한다. System.out.printf("%.1f", Math.abs(a-b)/2.0); 다음과 같다.
+  2. String.format()을 이용하는 방법
+
+     System.out.println(String.format("%.3f", dNum)); 
+  
+  3. print 함수에서 바로 표현하는 방법이 존재한다.
+  
+    System.out.printf("%.1f", Math.abs(a-b)/2.0); 
  
   2,3번 방식은 소수점 뒷자리가 0이더라도 사라지지 않지만 1번 방식은 사라진다. 온라인컴파일러에서는 1번방식을 써도 소수점이 사라지지 않아.
 
