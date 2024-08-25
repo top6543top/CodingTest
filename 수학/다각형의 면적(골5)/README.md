@@ -34,7 +34,7 @@ https://www.acmicpc.net/problem/2166
   
   3. print 함수에서 바로 표현하는 방법이 존재한다.
   
-    System.out.printf("%.1f", Math.abs(a-b)/2.0); 
+      System.out.printf("%.1f", Math.abs(a-b)/2.0); 
  
   2,3번 방식은 소수점 뒷자리가 0이더라도 사라지지 않지만 1번 방식은 사라진다. 온라인컴파일러에서는 1번방식을 써도 소수점이 사라지지 않아.
 
